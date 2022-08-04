@@ -1,0 +1,37 @@
+.work {
+    padding-top: 0;
+
+    &__title {
+        margin-bottom: 50px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        color: var(--main-text-color);
+        text-align: center;
+    }
+
+    &__list {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__thumb {
+        position: relative;
+    }
+
+    &__describe {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 70px;
+        background: rgba(47, 48, 58, 0.8);
+        text-transform: uppercase;
+        padding: 27px 82px;
+
+        font-size: 14px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        color: var(--white);
+    }
+}

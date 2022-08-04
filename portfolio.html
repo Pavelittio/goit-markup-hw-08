@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet"
+    href=https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css>
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container heder__container">
+        <a href="#" class="header__logo">Web<span class="header__logo--color">Studio</span></a>
+
+        <nav class="menu">
+          <ul class="menu__list">
+            <li><a href="./index.html" class="menu__item">Студия</a></li>
+            <li><a href="./portfolio.html" class="menu__item menu__item--current">Портфолио</a></li>
+            <li><a href="#" class="menu__item">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <ul class="header__auth">
+          <li>
+            <a href="mailto:infodevstudio.com" class="header__auth-link">
+              <svg width="16" height="12" class="header__icon-color">
+                <use href="./images/symbol-defs.svg#icon-mail"></use>
+              </svg>
+              infodevstudio.com
+            </a>
+          </li>
+          <li>
+            <a href="tel:+380961111111" class="header__auth-link">
+              <svg width="10" height="16" class="header__icon-color">
+                <use href="./images/symbol-defs.svg#icon-tel"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 class="visually-hidden">Портфолио</h1>
+          <ul class="filter">
+            <li>
+              <button type="button" class="filter__button filter filter__button--active">
+                Все
+              </button>
+            </li>
+            <li><button type="button" class="filter__button filter">Веб-сайты</button></li>
+            <li><button type="button" class="filter__button filter">Приложения</button></li>
+            <li><button type="button" class="filter__button filter">Дизайн</button></li>
+            <li><button type="button" class="filter__button filter">Маркетинг</button></li>
+          </ul>
+
+          <ul class="cards">
+            <li class="cards__item cards__item--shedow">
+              <div class="overlay">
+                <img src="./images/people.jpg" alt="Люди" width="370" />
+                <p class="overlay__text">
+                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+                  Все это позволит посетителю получить исчерпывающие сведения о компании или частном
+                  лице.
+                </p>
+              </div>
+              <div class="cards__text--wrap">
+                <h2 class="cards__title">Технокряк</h2>
+                <p class="cards__filter">Веб-сайт</p>
+              </div>
+            </li>
+
+            <li class="cards__item cards__item--shedow">
+              <img src="./images/sport.jpg" alt="Спортсмены" width="370" />
+              <div class="cards__text--wrap">
+                <h2 class="cards__title">
+                  Постер <span lang="en">New Orlean vs Golden Star</span>
+                </h2>
+                <p class="cards__filter">Дизайн</p>
+              </div>
+            </li>
+            <li class="cards__item cards__item--shedow">
+              <img src="./images/seafood.jpg" alt="Морская еда" width="370" />
+              <div class="cards__text--wrap">
+                <h2 class="cards__title">Ресторан <span lang="en">Seafood</span></h2>
+                <p class="cards__filter">Приложение</p>
+              </div>
+            </li>
+            <li class="cards__item cards__item--shedow">
+              <img src="./images/nausnik.jpg" alt="Наушники" width="370" />
+              <div class="cards__text--wrap">
+                <h2 class="cards__title">Проект <span lang="en">Prime</span></h2>
+                <p class="cards__filter">Маркетинг</p>
+              </div>
+            </li>
+            <li class="cards__item cards__item--shedow">
+              <img src="./images/boxes.jpg" alt="Подарочная упаковка" width="370" />
+              <div class="cards__text--wrap">
+                <h2 class="cards__title">Проект <span lang="en">Boxes</span></h2>
+                <p class="cards__filter">Приложение</p>
+              </div>
+            </li>
+            <li class="cards__item cards__item--shedow">
+              <img src="./images/display.jpg" alt="Монитор" width="370" />
+              <div class="cards__text--wrap">
+                <h2 class="cards__title"><span lang="en">Inspiration has no Borders</span></h2>
+                <p class="cards__filter">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="cards__item cards__item--shedow">
+              <img src="./images/book.jpg" alt="Книга" width="370" />
+              <div class="cards__text--wrap">
+                <h2 class="cards__title">Издание <span lang="en"></span> Limited Edition</h2>
+                <p class="cards__filter">Дизайн</p>
+              </div>
+            </li>
+            <li class="cards__item cards__item--shedow">
+              <img src="./images/sheet.jpg" alt="Этикетка" width="370" />
+              <div class="cards__text--wrap">
+                <h2 class="cards__title">Проект <span lang="en">LAB</span></h2>
+                <p class="cards__filter">Маркетинг</p>
+              </div>
+            </li>
+            <li class="cards__item cards__item--shedow">
+              <img src="./images/notebook.jpg" alt="Ноутбук" width="370" />
+              <div class="cards__text--wrap">
+                <h2 class="cards__title"><span lang="en">Growing Business</span></h2>
+                <p class="cards__filter">Приложение</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer footer__style">
+      <div class="container footer__items">
+        <div class="footer__contact">
+          <a href="#" class="footer__logo">Web<span class="footer__logo--color">Studio</span></a>
+          <address class="footer__adress">г. Киев, пр-т Леси Украинки, 26</address>
+          <ul>
+            <li class="footer__mail--margin">
+              <a href="mailto:infodevstudio.com" class="footer__auth">infodevstudio.com</a>
+            </li>
+            <li>
+              <a href="tel:+380961111111" class="footer__auth">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__social">
+          <h2 class="footer__cta">Присоединяйтесь</h2>
+          <ul class="footer__social-list">
+            <li>
+              <a href="#" class="footer__social-icon">
+                <svg class="footer__social-icon--color" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer__social-icon">
+                <svg class="footer__social-icon--color" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer__social-icon">
+                <svg class="footer__social-icon--color" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer__social-icon">
+                <svg class="footer__social-icon--color" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- -------------------------Подписка футера -->
+        <form class="footer__subscribe">
+          <h2 class="footer__subscribe-title">Подпишитесь на рассылку</h2>
+          <input
+            type="email"
+            name="subscribe"
+            class="footer__subscribe-input"
+            placeholder="E-mail"
+          />
+          <button class="footer__subscribe-button">
+            Подписаться
+            <svg class="footer__subscribe-icon" width="24" height="24">
+              <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>

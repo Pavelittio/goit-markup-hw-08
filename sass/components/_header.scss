@@ -1,0 +1,100 @@
+.heder__container {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--brend-color);
+    text-decoration: none;
+    margin-right: 93px;
+
+}
+
+/* Цвет половины логотипа */
+.header__color {
+    color: var(--main-text-color);
+}
+
+/* Навигация */
+.menu__list {
+    display: flex;
+    gap: 50px;
+}
+
+.menu__item {
+    position: relative;
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--main-text-color);
+    padding: 32px 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    &:hover,
+    &:focus {
+        color: var(--brend-color);
+    }
+
+
+    &--current {
+        color: var(--brend-color);
+
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            display: block;
+            width: 100%;
+            height: 4px;
+            background-color: var(--brend-color);
+            border-radius: 2px;
+        }
+    }
+}
+
+.header__auth {
+    display: flex;
+    margin-left: auto;
+    gap: 50px;
+
+
+    &-link {
+        display: flex;
+        align-items: center;
+        padding: 31px 0;
+        gap: 10px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        color: var(--second-text-color);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            color: var(--brend-color);
+        }
+    }
+}
+
+
+.header__icon-color {
+    fill: currentColor;
+}
+
+
+.header {
+    border-bottom: 1px solid var(--header-bottom-line);
+}
