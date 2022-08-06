@@ -11,7 +11,12 @@
     letter-spacing: 0.03em;
     color: var(--brend-color);
     text-decoration: none;
-    margin-right: 93px;
+    margin-right: 87px;
+
+    @media (min-width: 1200px) {
+        font-size: 26px;
+        margin-right: 93px;
+    }
 
 }
 
@@ -21,6 +26,7 @@
 }
 
 /* Навигация */
+
 .menu__list {
     display: flex;
     gap: 50px;
@@ -68,6 +74,10 @@
     margin-left: auto;
     gap: 50px;
 
+    @media (min-width:768px) and (max-width: 1200px) {
+        gap: 8px;
+        flex-direction: column;
+    }
 
     &-link {
         display: flex;
@@ -82,6 +92,10 @@
         color: var(--second-text-color);
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+        @media (min-width:768px) and (max-width: 1200px) {
+            padding: 0%;
+        }
+
         &:hover,
         &:focus {
             color: var(--brend-color);
@@ -94,7 +108,20 @@
     fill: currentColor;
 }
 
-
 .header {
     border-bottom: 1px solid var(--header-bottom-line);
+}
+
+.descktop-menu {
+    display: none;
+
+    @media (min-width: 768px) {
+        display: flex;
+    }
+}
+
+.mobile-menu{
+    @media (min-width: 767px) {
+        display: none;
+    }
 }

@@ -1,7 +1,9 @@
 .advanteges {
-
+   
     &__list {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         margin-top: 0;
         margin-bottom: 0;
         gap: 30px;
@@ -9,7 +11,14 @@
 
 
     &__item {
-        width: 270px;
+        width: 450px;
+
+        @media (min-width: 768px) {
+            width: 354px;
+        }
+        @media (min-width: 1200px) {
+            width: 270px;
+        }    
     }
 
     &__icon {
@@ -30,6 +39,10 @@
         text-transform: uppercase;
         color: var(--main-text-color);
         margin-bottom: 10px;
+
+        @media (max-width: 767px) {
+           text-align: center;
+        }
     }
 
     &__text {

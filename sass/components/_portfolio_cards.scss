@@ -3,6 +3,16 @@
     flex-wrap: wrap;
     gap: 30px;
 
+    &__item{
+        max-width: 450px;
+
+        @media (min-width: 768px) {
+            max-width: 354px;
+        }
+        @media (min-width: 1200px) {
+            max-width: 370px;
+        }
+    }
 
     &__text--wrap {
         padding: 20px 24px;

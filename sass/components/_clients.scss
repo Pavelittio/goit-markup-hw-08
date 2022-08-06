@@ -2,15 +2,20 @@
     &__title {
         margin-bottom: 50px;
         font-weight: 700;
-        font-size: 36px;
+        font-size: 28px;
         line-height: 1.2;
         letter-spacing: 0.03em;
         color: var(--main-text-color);
         text-align: center;
+
+    @media (min-width: 1200px) {
+            font-size: 36px;
+        }    
     }
 
     &__list {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         gap: 30px;
@@ -18,13 +23,22 @@
 
     &__item {
         display: flex;
-        width: 170px;
+        flex-wrap: wrap;
+        width: 210px;
         height: 92px;
         justify-content: center;
         align-items: center;
         border: 1px solid var(--icon-color);
         border-radius: 4px;
         transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        @media (min-width: 768px) {
+            width: 226px;
+        }
+
+        @media (min-width: 1200px) {
+            width: 170px;
+        }
 
         &:hover {
             border-color: var(--brend-color);

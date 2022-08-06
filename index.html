@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -22,7 +22,7 @@
       <div class="container heder__container">
         <a href="#" class="header__logo">Web<span class="header__color">Studio</span></a>
 
-        <nav class="menu">
+        <nav class="descktop-menu menu">
           <ul class="menu__list">
             <li><a href="./index.html" class="menu__item menu__item--current">Студия</a></li>
             <li><a href="./portfolio.html" class="menu__item">Портфолио</a></li>
@@ -30,7 +30,7 @@
           </ul>
         </nav>
 
-        <ul class="header__auth">
+        <ul class="descktop-menu header__auth">
           <li>
             <a href="mailto:infodevstudio.com" class="header__auth-link">
               <svg width="16" height="12" class="header__icon-color">
@@ -48,6 +48,39 @@
             </a>
           </li>
         </ul>
+        <!-- -----------------------Мобильное меню----------------------- -->
+        <!-- <div class="mobile-menu" data-mobile-menu> -->
+
+        <nav class="mobile-menu is-hidden" data-mobile-menu>
+          <button type="button" class="mobile-menu__open" data-mobile-menu-open>
+            <svg class="mobile-menu__open-icon" width="40" height="40">
+              <use href="./images/symbol-defs.svg#icon-menu_40px"></use>
+            </svg>
+          </button>
+
+          <button type="button" class="mobile-menu__close" data-mobile-menu-close>
+            <svg class="mobile-menu__close-icon" width="40" height="40">
+              <use href="./images/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+
+          <ul class="mobile__list">
+            <li>
+              <a href="./index.html" class="mobile__list-item menu__item--current">Студия</a>
+            </li>
+            <li><a href="./portfolio.html" class="mobile__list-item">Портфолио</a></li>
+            <li><a href="#" class="mobile__list-item">Контакты</a></li>
+          </ul>
+          <ul class="mobile__auth">
+            <li>
+              <a href="tel:+380961111111" class="mobile__auth-link">+38 096 111 11 11</a>
+            </li>
+            <li>
+              <a href="mailto:infodevstudio.com" class="mobile__auth-link">infodevstudio.com</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- </div> -->
       </div>
     </header>
     <!-- ------------------------- MAIN --------------- -->
@@ -56,8 +89,8 @@
       <!------------------------- HERO ----------------->
       <section class="hero">
         <div class="container">
-          <h1 class="hero__text">Эфективные решения <br />для вашего бизнеса</h1>
-          <button data-modal-open type="button" class="hero__button">Заказать услугу</button>
+          <h1 class="hero__text">Эфективі рішення для <br />вашого бізнесу</h1>
+          <button data-modal-open type="button" class="hero__button">Замовити послугу</button>
         </div>
       </section>
 
@@ -71,9 +104,9 @@
                   <use href="./images/symbol-defs.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h2 class="advanteges__title">Внимание к деталям</h2>
+              <h2 class="advanteges__title">УВАГА ДО ДЕТАЛЕЙ</h2>
               <p class="advanteges__text">
-                Идейные соображения, а также начало повседневной работы по формированию позиции.
+                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
 
@@ -84,9 +117,9 @@
                 </svg>
               </div>
 
-              <h2 class="advanteges__title">Пунктуальность</h2>
+              <h2 class="advanteges__title">ПУНКТУАЛЬНІСТЬ</h2>
               <p class="advanteges__text">
-                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
             </li>
 
@@ -96,9 +129,9 @@
                   <use href="./images/symbol-defs.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h2 class="advanteges__title">Планирование</h2>
+              <h2 class="advanteges__title">ПЛАНУВАННЯ</h2>
               <p class="advanteges__text">
-                Равным образом консультация с широким активом в значительной степени обуславливает.
+                Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
 
@@ -108,9 +141,9 @@
                   <use href="./images/symbol-defs.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h2 class="advanteges__title">Современные технологии</h2>
+              <h2 class="advanteges__title">СУЧАСНІ ТЕХНОЛОГІЇ</h2>
               <p class="advanteges__text">
-                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
               </p>
             </li>
           </ul>
@@ -120,19 +153,19 @@
       <!----------------- Чем занимаемся ---------------->
       <section class="section work">
         <div class="container">
-          <h2 class="work__title">Чем мы занимаемся</h2>
+          <h2 class="work__title">Чим ми займаємося</h2>
           <ul class="work__list">
             <li class="work__thumb">
               <img src="images/box1.jpg" alt="Десктопные приложения" width="370" />
-              <h3 class="work__describe">Десктопные приложения</h3>
+              <h3 class="work__describe">Десктопні додатки</h3>
             </li>
             <li class="work__thumb">
               <img src="images/box2.jpg" alt="Мобильные приложения" width="370" />
-              <h3 class="work__describe">Мобильные приложения</h3>
+              <h3 class="work__describe">Мобільні додатки</h3>
             </li>
             <li class="work__thumb">
               <img src="images/box3.jpg" alt="Дизайн сайта" width="370" />
-              <h3 class="work__describe">Дизайнерские решения</h3>
+              <h3 class="work__describe">Дизайнерські рішення</h3>
             </li>
           </ul>
         </div>
@@ -143,10 +176,10 @@
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
-            <li class="team__list-bgccards">
+            <li class="team__list-item">
               <img src="images/img4.jpg" alt="Дизайнер" width="270" />
               <div class="team__wrapper">
-                <h3 class="team__name">Игорь Демьяненко</h3>
+                <h3 class="team__name">Игор Демьяненко</h3>
                 <p class="team__position">Product Designer</p>
               </div>
               <div>
@@ -183,10 +216,10 @@
               </div>
             </li>
 
-            <li class="team__list-bgccards">
+            <li class="team__list-item">
               <img src="images/img5.jpg" alt="Програмист" width="270" />
               <div class="team__wrapper">
-                <h3 class="team__name">Ольга Репина</h3>
+                <h3 class="team__name">Ольга Репіна</h3>
                 <p class="team__position">Frontend Drveloper</p>
               </div>
               <div>
@@ -223,10 +256,10 @@
               </div>
             </li>
 
-            <li class="team__list-bgccards">
+            <li class="team__list-item">
               <img src="images/img6.jpg" alt="Маркетолог" width="270" />
               <div class="team__wrapper">
-                <h3 class="team__name">Николай Тарасов</h3>
+                <h3 class="team__name">Микола Тарасов</h3>
                 <p class="team__position">Marketing</p>
               </div>
               <div>
@@ -263,10 +296,10 @@
               </div>
             </li>
 
-            <li class="team__list-bgccards">
+            <li class="team__list-item">
               <img src="images/img7.jpg" alt="Дизайнер интерфейса" width="270" />
               <div class="team__wrapper">
-                <h3 class="team__name">Михаил Ермаков</h3>
+                <h3 class="team__name">Михайло Єрмаков</h3>
                 <p class="team__position">UI Designer</p>
               </div>
               <div>
@@ -309,7 +342,7 @@
       <!-- Постоянные клиенты -->
       <section class="section clients">
         <div class="container">
-          <h2 class="clients__title">Постоянные клиенты</h2>
+          <h2 class="clients__title">Постійні клієнти</h2>
           <ul class="clients__list">
             <li class="clients__item">
               <svg class="clients__icon" width="106" height="60">
@@ -355,11 +388,11 @@
           </button>
 
           <form>
-            <strong class="modal__title">Оставьте свои данные, мы вам перезвоним</strong>
+            <strong class="modal__title">Залиште свої дані, ми вам передзвонимо</strong>
 
             <div class="modal__group">
               <label class="modal__label">
-                Имя
+                Им'я
                 <span class="modal__input-field">
                   <input class="modal__input" type="text" name="name" />
                   <svg class="modal__icon" width="18" height="18">
@@ -378,7 +411,7 @@
                 </span>
               </label>
               <label class="modal__label"
-                >Почта
+                >Пошта
                 <span class="modal__input-field">
                   <input class="modal__input" type="email" name="email" />
                   <svg class="modal__icon" width="18" height="18">
@@ -387,7 +420,7 @@
                 </span>
               </label>
               <label class="feedback">
-                Комментарий
+                Коментар
                 <textarea
                   class="feedback__input"
                   name="comment"
@@ -407,10 +440,10 @@
                     href="./images/symbol-defs.svg#icon-icon-check"
                   ></use>
                 </svg>
-                Соглашаюсь с рассылкой и принимаю
-                <a class="policy__check-link" href="#">Условия договора</a>
+                Погоджуюсь із розсилкою та приймаю
+                <a class="policy__check-link" href="#">Умови договору</a>
               </label>
-              <button type="submit" class="button-submit">Отправить</button>
+              <button type="submit" class="button-submit">Відправити</button>
             </div>
           </form>
         </div>
@@ -423,7 +456,7 @@
       <div class="container footer__items">
         <div class="footer__contact">
           <a href="#" class="footer__logo">Web<span class="footer__logo--color">Studio</span></a>
-          <address class="footer__adress">г. Киев, пр-т Леси Украинки, 26</address>
+          <address class="footer__adress">м. Київ, пр-т Лесі Українки, 26</address>
           <ul>
             <li class="footer__mail--margin">
               <a href="mailto:infodevstudio.com" class="footer__auth">infodevstudio.com</a>
@@ -433,9 +466,9 @@
             </li>
           </ul>
         </div>
-
+        <!-- Footer социальные сети -->
         <div class="footer__social">
-          <h2 class="footer__cta">Присоединяйтесь</h2>
+          <h2 class="footer__cta">приєднуйтесь</h2>
           <ul class="footer__social-list">
             <li>
               <a href="#" class="footer__social-icon">
@@ -467,24 +500,30 @@
             </li>
           </ul>
         </div>
+
         <!-- -------------------------Подписка футера -->
-        <form class="footer__subscribe">
-          <h2 class="footer__subscribe-title">Подпишитесь на рассылку</h2>
-          <input
-            type="email"
-            name="subscribe"
-            class="footer__subscribe-input"
-            placeholder="E-mail"
-          />
-          <button class="footer__subscribe-button">
-            Подписаться
-            <svg class="footer__subscribe-icon" width="24" height="24">
-              <use href="./images/symbol-defs.svg#icon-icon-send"></use>
-            </svg>
-          </button>
-        </form>
+        <div class="footer__subscribe-form">
+          <h2 class="footer__subscribe-title">Підпишіться на розсилку</h2>
+
+          <form class="footer__subscribe">
+            <input
+              type="email"
+              name="subscribe"
+              class="footer__subscribe-input"
+              placeholder="E-mail"
+            />
+            <button class="footer__subscribe-button">
+              Підписатися
+              <svg class="footer__subscribe-icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

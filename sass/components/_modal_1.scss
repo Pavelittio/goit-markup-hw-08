@@ -21,11 +21,15 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    min-width: 528px;
+    width: 450px;
     padding: 40px;
     background: var(--white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+
+    @media (min-width: 768px) {
+        width: 528px;
+    }
 }
 
 
@@ -52,10 +56,14 @@
 .modal__title {
     display: block;
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 12px;
+
+    @media (min-width: 1200px) {
+        line-height: 1.2;
+    }
 }
 
 .modal__group {
@@ -131,12 +139,18 @@
 .policy {
     display: flex;
     justify-content: center;
-    font-size: 14px;
+    align-items: center;
+    font-size: 12px;
     line-height: 1.2;
     letter-spacing: 0.03em;
     color: var(--second-text-color);
     margin-bottom: 30px;
     cursor: pointer;
+
+    @media (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.7;
+    }
 
 
     /* visualy hidden */
@@ -146,7 +160,13 @@
 
     &__check-icon {
         position: absolute;
-        left: 42px;
+        left: 35px;
+        @media (min-width: 768px) {
+            left: 70px;
+        }
+        @media (min-width: 1200px) {
+            left: 52px;
+        }
     }
 
     &__check-icon--on {

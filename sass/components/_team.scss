@@ -5,23 +5,41 @@
 .team__title {
     margin-bottom: 50px;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.2;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
     text-align: center;
+
+    @media (min-width: 1199px) {
+        font-size: 36px;
+    }
+ 
 }
 
 .team__list {
-    display: flex;
     gap: 30px;
 
+    @media (min-width: 767px){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
-    &-bgccards {
+    &-item {
         background-color: var(--white);
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
+
+        max-width: 450px;
+        @media (min-width: 767px) and (max-width: 1199px) {
+            max-width: 354px;
+        }
+        @media (min-width: 1200px) {
+            max-width: 270px;
+        }
     }
+    
 }
 
 .team__wrapper {
@@ -52,6 +70,10 @@
     align-items: center;
     gap: 10px;
     margin-bottom: 30px;
+
+    @media (max-width: 767px) {
+        padding: 16px 0 24px 0;
+    }
 }
 
 .team__social-item {
@@ -62,8 +84,6 @@
     height: 44px;
     border-radius: 50%;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-
 
     &:hover {
         background-color: var(--brend-color);
