@@ -1,35 +1,37 @@
-(() => {
-  const refs = {
-    openMobileMenuBtn: document.querySelector("[data-mobile-menu-open]"),
-    closeMobileMenuBtn: document.querySelector("[data-mobile-menu-close]"),
-    mobileMenu: document.querySelector("[data-mobile-menu]"),
-  };
-
-  refs.openMobileMenuBtn.addEventListener("click", toggleMobileMenu);
-  refs.closeMobileMenuBtn.addEventListener("click", toggleMobileMenu);
-
-  function toggleMobileMenu() {
-    refs.mobileMenu.classList.toggle("is-hidden");
-  }
-})();
-
-
 // (() => {
 //   const refs = {
-//     openMenuBtn: document.querySelector('[data-menu-button]'),
-//     closeMenuBtn: document.querySelector('[data-menu-button-close]'),
-//     menu: document.querySelector('[data-menu]'),
+//     openMobileMenuBtn: document.querySelector("[data-mobile-menu-open]"),
+//     closeMobileMenuBtn: document.querySelector("[data-mobile-menu-close]"),
+//     mobileMenu: document.querySelector("[data-mobile-menu]"),
 //   };
 
-//   refs.openMenuBtn.addEventListener('click', toggleModal);
-//   refs.closeMenuBtn.addEventListener('click', toggleModal);
+//   refs.openMobileMenuBtn.addEventListener("click", toggleMobileMenu);
+//   refs.closeMobileMenuBtn.addEventListener("click", toggleMobileMenu);
 
-//   function toggleModal() {
-//     refs.menu.classList.toggle('is-open');
+//   function toggleMobileMenu() {
+//     refs.mobileMenu.classList.toggle("is-hidden");
 //   }
 // })();
 
-// второй вариант
+
+// ВТОРОЙ ВАРИАНТ
+
+(() => {
+  const refs = {
+    openMenuBtn: document.querySelector('[data-menu-button]'),
+    closeMenuBtn: document.querySelector('[data-menu-button-close]'),
+    menu: document.querySelector('[data-menu]'),
+  };
+
+  refs.openMenuBtn.addEventListener('click', toggleModal);
+  refs.closeMenuBtn.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    refs.menu.classList.toggle('is-open');
+  }
+})();
+
+// ТРЕТИЙ ВАРИАНТ
 
 // (() => {
 //   const mobileMenu = document.querySelector("[data-menu]");

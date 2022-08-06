@@ -49,25 +49,21 @@
           </li>
         </ul>
         <!-- -----------------------Мобильное меню----------------------- -->
-        <!-- <div class="mobile-menu" data-mobile-menu> -->
+        <button type="button" class="header-menu__open" data-menu-button>
+          <svg class="header-menu__open-icon" width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
 
-        <nav class="mobile-menu is-hidden" data-mobile-menu>
-          <button type="button" class="mobile-menu__open" data-mobile-menu-open>
-            <svg class="mobile-menu__open-icon" width="40" height="40">
-              <use href="./images/symbol-defs.svg#icon-menu_40px"></use>
-            </svg>
-          </button>
-
-          <button type="button" class="mobile-menu__close" data-mobile-menu-close>
+        <nav class="header-mobile-menu mobile-menu is-open" data-menu>
+          <button type="button" class="header-menu__close" data-menu-button-close>
             <svg class="mobile-menu__close-icon" width="40" height="40">
               <use href="./images/symbol-defs.svg#icon-close"></use>
             </svg>
           </button>
 
           <ul class="mobile__list">
-            <li>
-              <a href="./index.html" class="mobile__list-item menu__item--current">Студия</a>
-            </li>
+            <li><a href="./index.html" class="mobile__list-item menu__item--current">Студия</a></li>
             <li><a href="./portfolio.html" class="mobile__list-item">Портфолио</a></li>
             <li><a href="#" class="mobile__list-item">Контакты</a></li>
           </ul>
@@ -80,7 +76,6 @@
             </li>
           </ul>
         </nav>
-        <!-- </div> -->
       </div>
     </header>
     <!-- ------------------------- MAIN --------------- -->
@@ -156,15 +151,30 @@
           <h2 class="work__title">Чим ми займаємося</h2>
           <ul class="work__list">
             <li class="work__thumb">
-              <img src="images/box1.jpg" alt="Десктопные приложения" width="370" />
+              <img
+                srcset="images/box1.jpg 1x, images/box1_2x.jpg 2x"
+                src="images/box1.jpg"
+                alt="Десктопные приложения"
+                width="370"
+              />
               <h3 class="work__describe">Десктопні додатки</h3>
             </li>
             <li class="work__thumb">
-              <img src="images/box2.jpg" alt="Мобильные приложения" width="370" />
+              <img
+                srcset="images/box2.jpg 1x, images/box2_2x.jpg 2x"
+                src="images/box2.jpg"
+                alt="Мобильные приложения"
+                width="370"
+              />
               <h3 class="work__describe">Мобільні додатки</h3>
             </li>
             <li class="work__thumb">
-              <img src="images/box3.jpg" alt="Дизайн сайта" width="370" />
+              <img
+                srcset="images/box3.jpg 1x, images/box3_2x.jpg 2x"
+                src="images/box3.jpg"
+                alt="Дизайн сайта"
+                width="370"
+              />
               <h3 class="work__describe">Дизайнерські рішення</h3>
             </li>
           </ul>
@@ -177,7 +187,24 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__list-item">
-              <img src="images/img4.jpg" alt="Дизайнер" width="270" />
+              <picture>
+                <source
+                  srcset="images/img4.jpg 1x, images/img4_2x 2x.jpg"
+                  type="image/jpg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="images/img4_tablet.jpg 1x, images/img4_tablet_2x 2x.jpg"
+                  type="image/jpg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="images/img4_mobile.jpg 1x, images/img4_mobile_2x 2x.jpg"
+                  type="image/jpg"
+                  media="(max-width: 767px)"
+                />
+                <img src="images/img4.jpg" alt="Дизайнер" width="270" />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="team__name">Игор Демьяненко</h3>
                 <p class="team__position">Product Designer</p>
@@ -217,7 +244,25 @@
             </li>
 
             <li class="team__list-item">
-              <img src="images/img5.jpg" alt="Програмист" width="270" />
+              <picture>
+                <source
+                  srcset="images/img5.jpg 1x, images/img5_2x 2x.jpg"
+                  type="image/jpg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="images/img5_tablet.jpg 1x, images/img5_tablet_2x 2x.jpg"
+                  type="image/jpg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="images/img5_mobile.jpg 1x, images/img5_mobile_2x 2x.jpg"
+                  type="image/jpg"
+                  media="(max-width: 767px)"
+                />
+                <img src="images/img5.jpg" alt="Програмист" width="270" />
+              </picture>
+
               <div class="team__wrapper">
                 <h3 class="team__name">Ольга Репіна</h3>
                 <p class="team__position">Frontend Drveloper</p>
@@ -257,7 +302,24 @@
             </li>
 
             <li class="team__list-item">
-              <img src="images/img6.jpg" alt="Маркетолог" width="270" />
+              <picture>
+                <source
+                  srcset="images/img6.jpg 1x, images/img6_2x 2x.jpg"
+                  type="image/jpg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="images/img6_tablet.jpg 1x, images/img6_tablet_2x 2x.jpg"
+                  type="image/jpg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="images/img6_mobile.jpg 1x, images/img6_mobile_2x 2x.jpg"
+                  type="image/jpg"
+                  media="(max-width: 767px)"
+                />
+                <img src="images/img6.jpg" alt="Програмист" width="270" />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="team__name">Микола Тарасов</h3>
                 <p class="team__position">Marketing</p>
@@ -297,7 +359,25 @@
             </li>
 
             <li class="team__list-item">
-              <img src="images/img7.jpg" alt="Дизайнер интерфейса" width="270" />
+              <picture>
+                <source
+                  srcset="images/img7.jpg 1x, images/img7_2x 2x.jpg"
+                  type="image/jpg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="images/img7_tablet.jpg 1x, images/img7_tablet_2x 2x.jpg"
+                  type="image/jpg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="images/img7_mobile.jpg 1x, images/img7_mobile_2x 2x.jpg"
+                  type="image/jpg"
+                  media="(max-width: 767px)"
+                />
+                <img src="images/img7.jpg" alt="Програмист" width="270" />
+              </picture>
+
               <div class="team__wrapper">
                 <h3 class="team__name">Михайло Єрмаков</h3>
                 <p class="team__position">UI Designer</p>

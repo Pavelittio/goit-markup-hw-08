@@ -68,7 +68,25 @@
           <ul class="cards">
             <li class="cards__item cards__item--shedow">
               <div class="overlay">
-                <img src="./images/people.jpg" alt="Люди" width="370" />
+                <picture>
+                  <source
+                    srcset="images/people.jpg 1x, images/people_2x 2x.jpg"
+                    type="image/jpg"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="images/people_tablet.jpg 1x, images/people_tablet_2x 2x.jpg"
+                    type="image/jpg"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="images/people_mobile.jpg 1x, images/people_mobile_2x 2x.jpg"
+                    type="image/jpg"
+                    media="(max-width: 767px)"
+                  />
+                  <img src="./images/people.jpg" alt="Люди" width="370" />
+                </picture>
+
                 <p class="overlay__text">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                   Все это позволит посетителю получить исчерпывающие сведения о компании или частном
@@ -82,7 +100,25 @@
             </li>
 
             <li class="cards__item cards__item--shedow">
-              <img src="./images/sport.jpg" alt="Спортсмены" width="370" />
+              <picture>
+                <source
+                  srcset="images/sport.jpg 1x, images/sport_2x 2x.jpg"
+                  type="image/jpg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="images/sport_tablet.jpg 1x, images/sport_tablet_2x 2x.jpg"
+                  type="image/jpg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="images/sport_mobile.jpg 1x, images/sport_mobile_2x 2x.jpg"
+                  type="image/jpg"
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/sport.jpg" alt="Спортсмены" width="370" />
+              </picture>
+
               <div class="cards__text--wrap">
                 <h2 class="cards__title">
                   Постер <span lang="en">New Orlean vs Golden Star</span>
@@ -91,49 +127,175 @@
               </div>
             </li>
             <li class="cards__item cards__item--shedow">
-              <img src="./images/seafood.jpg" alt="Морская еда" width="370" />
+              <picture>
+                <source
+                  srcset="images/seafood.jpg 1x, images/seafood_2x 2x.jpg"
+                  type="image/jpg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="images/seafood_tablet.jpg 1x, images/seafood_tablet_2x 2x.jpg"
+                  type="image/jpg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="images/seafood_mobile.jpg 1x, images/seafood_mobile_2x 2x.jpg"
+                  type="image/jpg"
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/seafood.jpg" alt="Морская еда" width="370" />
+              </picture>
+
               <div class="cards__text--wrap">
                 <h2 class="cards__title">Ресторан <span lang="en">Seafood</span></h2>
                 <p class="cards__filter">Приложение</p>
               </div>
             </li>
             <li class="cards__item cards__item--shedow">
-              <img src="./images/nausnik.jpg" alt="Наушники" width="370" />
+              <picture>
+                <source
+                  srcset="images/nausnik.jpg 1x, images/nausnik_2x 2x.jpg"
+                  type="image/jpg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="images/nausnik_tablet.jpg 1x, images/nausnik_tablet_2x 2x.jpg"
+                  type="image/jpg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="images/nausnik_mobile.jpg 1x, images/nausnik_mobile_2x 2x.jpg"
+                  type="image/jpg"
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/nausnik.jpg" alt="Наушники" width="370" />
+              </picture>
+
               <div class="cards__text--wrap">
                 <h2 class="cards__title">Проект <span lang="en">Prime</span></h2>
                 <p class="cards__filter">Маркетинг</p>
               </div>
             </li>
             <li class="cards__item cards__item--shedow">
-              <img src="./images/boxes.jpg" alt="Подарочная упаковка" width="370" />
+              <picture>
+                <source
+                  srcset="images/boxes.jpg 1x, images/boxes_2x 2x.jpg"
+                  type="image/jpg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="images/boxes_tablet.jpg 1x, images/boxes_tablet_2x 2x.jpg"
+                  type="image/jpg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="images/boxes_mobile.jpg 1x, images/boxes_mobile_2x 2x.jpg"
+                  type="image/jpg"
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/boxes.jpg" alt="Подарочная упаковка" width="370" />
+              </picture>
+
               <div class="cards__text--wrap">
                 <h2 class="cards__title">Проект <span lang="en">Boxes</span></h2>
                 <p class="cards__filter">Приложение</p>
               </div>
             </li>
             <li class="cards__item cards__item--shedow">
-              <img src="./images/display.jpg" alt="Монитор" width="370" />
+              <picture>
+                <source
+                  srcset="images/display.jpg 1x, images/display_2x 2x.jpg"
+                  type="image/jpg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="images/display_tablet.jpg 1x, images/display_tablet_2x 2x.jpg"
+                  type="image/jpg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="images/display_mobile.jpg 1x, images/display_mobile_2x 2x.jpg"
+                  type="image/jpg"
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/display.jpg" alt="Монитор" width="370" />
+              </picture>
+
               <div class="cards__text--wrap">
                 <h2 class="cards__title"><span lang="en">Inspiration has no Borders</span></h2>
                 <p class="cards__filter">Веб-сайт</p>
               </div>
             </li>
             <li class="cards__item cards__item--shedow">
-              <img src="./images/book.jpg" alt="Книга" width="370" />
+              <picture>
+                <source
+                  srcset="images/book.jpg 1x, images/book_2x 2x.jpg"
+                  type="image/jpg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="images/book_tablet.jpg 1x, images/book_tablet_2x 2x.jpg"
+                  type="image/jpg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="images/book_mobile.jpg 1x, images/book_mobile_2x 2x.jpg"
+                  type="image/jpg"
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/book.jpg" alt="Книга" width="370" />
+              </picture>
+
               <div class="cards__text--wrap">
                 <h2 class="cards__title">Издание <span lang="en"></span> Limited Edition</h2>
                 <p class="cards__filter">Дизайн</p>
               </div>
             </li>
             <li class="cards__item cards__item--shedow">
-              <img src="./images/sheet.jpg" alt="Этикетка" width="370" />
+              <picture>
+                <source
+                  srcset="images/sheet.jpg 1x, images/sheet_2x 2x.jpg"
+                  type="image/jpg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="images/sheet_tablet.jpg 1x, images/sheet_tablet_2x 2x.jpg"
+                  type="image/jpg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="images/sheet_mobile.jpg 1x, images/sheet_mobile_2x 2x.jpg"
+                  type="image/jpg"
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/sheet.jpg" alt="Этикетка" width="370" />
+              </picture>
+
               <div class="cards__text--wrap">
                 <h2 class="cards__title">Проект <span lang="en">LAB</span></h2>
                 <p class="cards__filter">Маркетинг</p>
               </div>
             </li>
             <li class="cards__item cards__item--shedow">
-              <img src="./images/notebook.jpg" alt="Ноутбук" width="370" />
+              <picture>
+                <source
+                  srcset="images/notebook.jpg 1x, images/notebook_2x 2x.jpg"
+                  type="image/jpg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="images/notebook_tablet.jpg 1x, images/notebook_tablet_2x 2x.jpg"
+                  type="image/jpg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="images/notebook_mobile.jpg 1x, images/notebook_mobile_2x 2x.jpg"
+                  type="image/jpg"
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/notebook.jpg" alt="Ноутбук" width="370" />
+              </picture>
+
               <div class="cards__text--wrap">
                 <h2 class="cards__title"><span lang="en">Growing Business</span></h2>
                 <p class="cards__filter">Приложение</p>
