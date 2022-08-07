@@ -77,6 +77,10 @@
             height: 4px;
             background-color: var(--brend-color);
             border-radius: 2px;
+
+            @media (max-width: 767px) {
+                display: none;
+            }
         }
     }
 }
@@ -137,7 +141,7 @@
     background-color: transparent;
     border: none;
     
-    @media (min-width: 767px) {
+    @media (min-width: 768px) {
         display: none;
     }
 }
@@ -198,6 +202,7 @@
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--brend-color);
+    text-decoration: none;
 }
 
 .mobile-menu__auth-link--style{
@@ -213,13 +218,23 @@
 
 .mobile-menu_sotial{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
+
+.mobile-menu_sotial-item {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+
+
 .mobile-menu__social-link{
     font-weight: 500;
     font-size: 18px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--brend-color);
+    text-decoration: none;
 }
 
