@@ -185,12 +185,12 @@ ul {
   margin-left: auto;
   gap: 50px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .header__auth {
     display: none;
   }
 }
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .header__auth {
     gap: 8px;
     -webkit-box-orient: vertical;
