@@ -32,7 +32,7 @@
           <li>
             <a href="mailto:infodevstudio.com" class="header__auth-link">
               <svg width="16" height="12" class="header__icon-color">
-                <use href="../images/symbol-defs.svg#icon-mail"></use>
+                <use href="/images/symbol-defs.svg#icon-mail"></use>
               </svg>
               infodevstudio.com
             </a>
@@ -40,7 +40,7 @@
           <li>
             <a href="tel:+380961111111" class="header__auth-link">
               <svg width="10" height="16" class="header__icon-color">
-                <use href="../images/symbol-defs.svg#icon-tel"></use>
+                <use href="/images/symbol-defs.svg#icon-tel"></use>
               </svg>
               +38 096 111 11 11
             </a>
@@ -54,24 +54,26 @@
           aria-controls="mobile-menu"
         >
           <svg class="header-menu__open-icon" width="40" height="40">
-            <use href="../images/symbol-defs.svg#icon-menu_40px"></use>
+            <use href="/images/symbol-defs.svg#icon-menu_40px"></use>
           </svg>
         </button>
 
         <div class="mobile-menu-container js-menu-container" id="mobile-menu">
           <button type="button" class="mobile-menu__close js-close-menu">
             <svg class="mobile-menu__close-icon" width="20" height="20">
-              <use href="../images/symbol-defs.svg#icon-close"></use>
+              <use href="/images/symbol-defs.svg#icon-close"></use>
             </svg>
           </button>
 
           <nav class="mobile-menu__nav">
             <ul>
               <li class="mobile-menu__nav-item">
-                <a href="./index.html" class="mobile-menu__nav-link menu__item--current">Студия</a>
+                <a href="./index.html" class="mobile-menu__nav-link">Студия</a>
               </li>
               <li class="mobile-menu__nav-item">
-                <a href="./portfolio.html" class="mobile-menu__nav-link">Портфолио</a>
+                <a href="./portfolio.html" class="mobile-menu__nav-link menu__item--current"
+                  >Портфолио</a
+                >
               </li>
               <li class="mobile-menu__nav-item">
                 <a href="#" class="mobile-menu__nav-link">Контакты</a>
@@ -93,13 +95,13 @@
           </ul>
 
           <ul class="mobile-menu_sotial">
-            <li>
+            <li class="mobile-menu_sotial-item">
               <a href="#" class="mobile-menu__social-link">Instagram </a>
             </li>
-            <li>
+            <li class="mobile-menu_sotial-item">
               <a href="#" class="mobile-menu__social-link">Twitter </a>
             </li>
-            <li>
+            <li class="mobile-menu_sotial-item">
               <a href="#" class="mobile-menu__social-link">Facebook </a>
             </li>
             <li>
@@ -388,28 +390,28 @@
             <li>
               <a href="#" class="footer__social-icon">
                 <svg class="footer__social-icon--color" width="20" height="20">
-                  <use href="../images/symbol-defs.svg#icon-instagram"></use>
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="#" class="footer__social-icon">
                 <svg class="footer__social-icon--color" width="20" height="20">
-                  <use href="../images/symbol-defs.svg#icon-twitter"></use>
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="#" class="footer__social-icon">
                 <svg class="footer__social-icon--color" width="20" height="20">
-                  <use href="../images/symbol-defs.svg#icon-facebook"></use>
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="#" class="footer__social-icon">
                 <svg class="footer__social-icon--color" width="20" height="20">
-                  <use href="../images/symbol-defs.svg#icon-linkedin"></use>
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
@@ -430,12 +432,19 @@
             <button class="footer__subscribe-button">
               Підписатися
               <svg class="footer__subscribe-icon" width="24" height="24">
-                <use href="../images/symbol-defs.svg#icon-icon-send"></use>
+                <use href="./images/symbol-defs.svg#icon-icon-send"></use>
               </svg>
             </button>
           </form>
         </div>
       </div>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
