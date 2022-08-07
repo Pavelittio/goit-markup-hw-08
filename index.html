@@ -49,33 +49,66 @@
           </li>
         </ul>
         <!-- -----------------------Мобильное меню----------------------- -->
-        <button type="button" class="header-menu__open" data-menu-button>
+        <button
+          type="button"
+          class="header-menu__open js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <svg class="header-menu__open-icon" width="40" height="40">
             <use href="./images/symbol-defs.svg#icon-menu_40px"></use>
           </svg>
         </button>
 
-        <nav class="is-open" data-menu>
-          <button type="button" class="header-menu__close" data-menu-button-close>
-            <svg class="mobile-menu__close-icon" width="40" height="40">
+        <div class="mobile-menu-container js-menu-container" id="mobile-menu">
+          <button type="button" class="mobile-menu__close js-close-menu">
+            <svg class="mobile-menu__close-icon" width="20" height="20">
               <use href="./images/symbol-defs.svg#icon-close"></use>
             </svg>
           </button>
 
-          <ul class="mobile__list">
-            <li><a href="./index.html" class="mobile__list-item menu__item--current">Студия</a></li>
-            <li><a href="./portfolio.html" class="mobile__list-item">Портфолио</a></li>
-            <li><a href="#" class="mobile__list-item">Контакты</a></li>
-          </ul>
-          <ul class="mobile__auth">
-            <li>
-              <a href="tel:+380961111111" class="mobile__auth-link">+38 096 111 11 11</a>
+          <nav class="mobile-menu__nav">
+            <ul>
+              <li class="mobile-menu__nav-item">
+                <a href="./index.html" class="mobile-menu__nav-link menu__item--current">Студия</a>
+              </li>
+              <li class="mobile-menu__nav-item">
+                <a href="./portfolio.html" class="mobile-menu__nav-link">Портфолио</a>
+              </li>
+              <li class="mobile-menu__nav-item">
+                <a href="#" class="mobile-menu__nav-link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="mobile-menu__auth">
+            <li class="mobile-menu__auth-item">
+              <a href="tel:+380961111111" class="mobile-menu__auth-link">+38 096 111 11 11</a>
             </li>
             <li>
-              <a href="mailto:infodevstudio.com" class="mobile__auth-link">infodevstudio.com</a>
+              <a
+                href="mailto:infodevstudio.com"
+                class="mobile-menu__auth-link mobile-menu__auth-link--style"
+                >infodevstudio.com</a
+              >
             </li>
           </ul>
-        </nav>
+
+          <ul class="mobile-menu_sotial">
+            <li>
+              <a href="#" class="mobile-menu__social-link">Instagram </a>
+            </li>
+            <li>
+              <a href="#" class="mobile-menu__social-link">Twitter </a>
+            </li>
+            <li>
+              <a href="#" class="mobile-menu__social-link">Facebook </a>
+            </li>
+            <li>
+              <a href="#" class="mobile-menu__social-link">LinkedIn </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!-- ------------------------- MAIN --------------- -->
@@ -604,6 +637,12 @@
     </footer>
 
     <script src="./js/modal.js"></script>
-    <script src="./js/mobile-menu.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

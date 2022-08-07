@@ -20,7 +20,7 @@
       <div class="container heder__container">
         <a href="#" class="header__logo">Web<span class="header__color">Studio</span></a>
 
-        <nav class="menu">
+        <nav class="descktop-menu menu">
           <ul class="menu__list">
             <li><a href="./index.html" class="menu__item">Студия</a></li>
             <li><a href="./portfolio.html" class="menu__item menu__item--current">Портфолио</a></li>
@@ -28,7 +28,7 @@
           </ul>
         </nav>
 
-        <ul class="header__auth">
+        <ul class="descktop-menu header__auth">
           <li>
             <a href="mailto:infodevstudio.com" class="header__auth-link">
               <svg width="16" height="12" class="header__icon-color">
@@ -46,6 +46,67 @@
             </a>
           </li>
         </ul>
+        <!-- -----------------------Мобильное меню----------------------- -->
+        <button
+          type="button"
+          class="header-menu__open js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="header-menu__open-icon" width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
+
+        <div class="mobile-menu-container js-menu-container" id="mobile-menu">
+          <button type="button" class="mobile-menu__close js-close-menu">
+            <svg class="mobile-menu__close-icon" width="20" height="20">
+              <use href="./images/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+
+          <nav class="mobile-menu__nav">
+            <ul>
+              <li class="mobile-menu__nav-item">
+                <a href="./index.html" class="mobile-menu__nav-link menu__item--current">Студия</a>
+              </li>
+              <li class="mobile-menu__nav-item">
+                <a href="./portfolio.html" class="mobile-menu__nav-link">Портфолио</a>
+              </li>
+              <li class="mobile-menu__nav-item">
+                <a href="#" class="mobile-menu__nav-link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="mobile-menu__auth">
+            <li class="mobile-menu__auth-item">
+              <a href="tel:+380961111111" class="mobile-menu__auth-link">+38 096 111 11 11</a>
+            </li>
+            <li>
+              <a
+                href="mailto:infodevstudio.com"
+                class="mobile-menu__auth-link mobile-menu__auth-link--style"
+                >infodevstudio.com</a
+              >
+            </li>
+          </ul>
+
+          <ul class="mobile-menu_sotial">
+            <li>
+              <a href="#" class="mobile-menu__social-link">Instagram </a>
+            </li>
+            <li>
+              <a href="#" class="mobile-menu__social-link">Twitter </a>
+            </li>
+            <li>
+              <a href="#" class="mobile-menu__social-link">Facebook </a>
+            </li>
+            <li>
+              <a href="#" class="mobile-menu__social-link">LinkedIn </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
